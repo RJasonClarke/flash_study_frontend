@@ -24,6 +24,7 @@ class CardsForm extends Component {
     render() {
         return (
             <div>
+                <h2>Create A New Card: </h2>
                <form onSubmit={this.handleSubmit}>
                     <label>Question: </label>
                     <input type="text" value={this.state.name} onChange={this.handleChange} name="question"></input>

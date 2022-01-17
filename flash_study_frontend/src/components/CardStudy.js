@@ -4,7 +4,7 @@ import { connect } from "react-redux";
 const CardStudy = ({cards}) => {
     return(
         <div>
-            <h3>Click a card to see the answer</h3>
+            <h2>Click a card to see the answer</h2>
             {cards.map(card => 
                 <ul key={card.id}>
                     <li key={card.id}>
