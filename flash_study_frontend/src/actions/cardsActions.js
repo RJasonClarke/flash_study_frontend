@@ -13,7 +13,13 @@ export const addCard = (card) => {
             headers: {"Content-Type": "application/json"},
             body: JSON.stringify(card)
         })
-        .then(resp => resp.json())
+        .then(resp => {
+            if(!resp.ok){
+                throw Error("Fields cannot be blank.")
+            }
+            return resp.json();
+        })
         .then(card => dispatch({type: 'ADD_CARD', payload: card}))
+        .catch(error => {alert(error.message)})
     }
 }
