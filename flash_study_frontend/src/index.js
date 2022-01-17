@@ -5,6 +5,7 @@ import { Provider } from "react-redux";
 import thunk from "redux-thunk";
 import { composeWithDevTools } from "redux-devtools-extension";
 import { BrowserRouter as Router} from "react-router-dom";
+import './index.css'
 
 import App from "./App";
 import { rootReducer } from "./reducers/rootReducer";

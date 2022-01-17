@@ -7,9 +7,9 @@ const CardsIndex = ({cards}) => {
             <h2>Your Flash Cards:</h2>
             {cards.map(card => 
                 <ul key={card.id}>
-                    <li key={card.id}>
-                        Q: {card.question} <br/>
-                        A: {card.answer}
+                    <li key={card.id} className='card'>
+                        {card.question} <br/>
+                        {card.answer}
                     </li>
                 </ul>
         )}

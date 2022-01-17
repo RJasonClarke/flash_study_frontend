@@ -2,17 +2,18 @@ import React from "react";
 import { connect } from "react-redux";
 
 const CardStudy = ({cards}) => {
-    
+
     return(
         <div>
-            <h2>Click a card to see the answer</h2>
+            <h2>Click a card below to see the answer:</h2>
                 {cards.map((card) => ({ card, sort: Math.random() }))
                 .sort((a, b) => a.sort - b.sort)
                 .map(({ card }) => 
-                <ul key={card.id}>
+                <ul key={card.id} className='card'>
                     <li key={card.id}>
-                        Q: {card.question} <br/>
-                        A: {card.answer}
+                        <div className='question'>{card.question}</div>
+                        <br/>
+                        <div className='answer' >{card.answer}</div>
                     </li>
                 </ul>
             )}
