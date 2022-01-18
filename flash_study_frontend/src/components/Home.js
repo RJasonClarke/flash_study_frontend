@@ -4,7 +4,7 @@ const Home = () => {
     return (
         <div>
             <h2>Welcome to Flash-Study!</h2>
-            <p><strong>Get started by creating a new deck of flashcards!</strong></p>
+            <p><strong>Get started by creating some flashcards with the New Card link in the nav bar!</strong></p>
         </div>
     );
 };

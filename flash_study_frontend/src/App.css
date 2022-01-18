@@ -19,20 +19,27 @@ a{
   padding-right: 5px;
 }
 
+ul{
+  padding-inline-start: 240px;
+  padding-inline-end: 240px;
+}
+
 li{
   list-style: none;
+  padding: 60px;
+  margin: 10px;
 }
 
-.question{
-
+#question{
+  pointer-events: none;
 }
 
-.answer{
-  
+#answer{
+  visibility: hidden;
+  color: green;
 }
 
 .card {
-  display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
