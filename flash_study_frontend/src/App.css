@@ -20,14 +20,18 @@ a{
 }
 
 ul{
-  padding-inline-start: 240px;
-  padding-inline-end: 240px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-right: 40px;
 }
 
 li{
   list-style: none;
-  padding: 60px;
+  padding: 30px;
   margin: 10px;
+  width: 200px;
+  height: 100px;
 }
 
 #question{
