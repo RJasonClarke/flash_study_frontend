@@ -8,8 +8,8 @@ const CardsIndex = ({cards}) => {
             <ul className="cards-index">
             {cards.map(card => 
                     <li key={card.id} className='card'>
-                        {card.question} <br/> <br/>
-                        {card.answer}
+                        <p>{card.question}</p>
+                        <p>{card.answer}</p>
                     </li>
                 )}
             </ul>

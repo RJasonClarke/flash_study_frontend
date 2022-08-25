@@ -23,3 +23,15 @@ export const addCard = (card) => {
         .catch(error => {alert(error.message)})
     }
 }
+
+export const deleteCard = (card) => {
+    return (dispatch) => {
+        fetch(`http://localhost:3001/cards/${card.id}`,{
+            method: "DELETE",
+            headers: {"Content-Type": "application/json"},
+            body: JSON.stringify(card)
+        })
+        .then(resp => resp.json())
+        .then(card => dispatch({type: 'DELETE_CARD', payload: card}))
+    }
+}

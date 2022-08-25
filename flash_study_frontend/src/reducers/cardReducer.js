@@ -4,6 +4,8 @@ export const cardReducer = (state = [], action) => {
             return action.payload
         case "ADD_CARD":
             return [...state, action.payload]
+        case "DELETE_CARD":
+            return [action.payload]
         default:
             return state
     }
